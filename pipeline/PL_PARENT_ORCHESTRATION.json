@@ -45,9 +45,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('LKP_WATERMARK_TBL').output",
+						"value": "@activity('LKP_WATERMARK_TBL').output.value",
 						"type": "Expression"
 					},
+					"isSequential": false,
 					"activities": [
 						{
 							"name": "EXEC_PL_CHILD_INCREMENTAL",
