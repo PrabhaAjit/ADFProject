@@ -1,0 +1,12 @@
+{
+	"name": "DS_LKP_WATERMARK_TBL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_WATERMARK_TBL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"name": "DS_LKP_MAX_WM_VALUE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_WATERMARK_TBL",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"schema_name": {
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.TableSchema"
+			},
+			"table_name": {
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.TableName"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().schema_name",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().table_name",
+				"type": "Expression"
+			}
+		}
+	}
+}
