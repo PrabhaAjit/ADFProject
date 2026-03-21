@@ -51,7 +51,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@greater(int(activity('LKP_MAX_WATERMARK_VALUE').output.firstrow.MaxValue),\r\nint(pipeline().parameters.WatermarkColumn))",
+						"value": "@greater(int(activity('LKP_MAX_WATERMARK_VALUE').output.firstRow.MaxValue),\nint(pipeline().parameters.WatermarkColumn))",
 						"type": "Expression"
 					},
 					"ifTrueActivities": [
