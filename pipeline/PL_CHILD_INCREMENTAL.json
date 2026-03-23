@@ -187,11 +187,6 @@
 				"type": "string"
 			}
 		},
-		"variables": {
-			"tt": {
-				"type": "String"
-			}
-		},
 		"annotations": []
 	}
 }
