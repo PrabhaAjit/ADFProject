@@ -18,7 +18,7 @@
 					"source": {
 						"type": "SqlServerSource",
 						"sqlReaderQuery": {
-							"value": "SELECT [TableSchema]\n      ,[TableName]\n      ,[WatermarkColumn]\n      ,[LastLoadValue]\n  FROM [dbo].[ADF_Watermark_Table]",
+							"value": "SELECT [TableSchema]\n      ,[TableName]\n      ,[WatermarkColumn]\n      ,[LastLoadValue]      \n  FROM [dbo].[ADF_Watermark_Table]",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
